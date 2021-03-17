@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "4ffd33c9-739e-4acb-b077-5239ebce0e38",
+		"name": "IDE Hyper Science Submittion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api-sandb2.appsquared.io/bookmark/submitPdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "externalId",
+							"value": "HB10",
+							"type": "text"
+						},
+						{
+							"key": "generateBookmarkedPdf",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "generateCsv",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "AcceptPartialResults",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "extractFullResults",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "presenceFormNames",
+							"value": "HUD 92800-5B,URLA,1234,1004d,NPMA-33",
+							"type": "text"
+						},
+						{
+							"key": "extractionFormNames",
+							"value": "1004,URLA,RAJ,1234,1004d,NPMA-33",
+							"type": "text"
+						},
+						{
+							"key": "submissionFileName",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://api-sandb2.appsquared.io/bookmark/submitPdf",
+					"protocol": "http",
+					"host": [
+						"api-sandb2",
+						"appsquared",
+						"io"
+					],
+					"path": [
+						"bookmark",
+						"submitPdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
