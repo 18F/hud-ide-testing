@@ -31,33 +31,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "getResultsFiles",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://api-sandb2.appsquared.io/bookmark/getResultsFiles?externalId=KV1",
-					"protocol": "http",
-					"host": [
-						"api-sandb2",
-						"appsquared",
-						"io"
-					],
-					"path": [
-						"bookmark",
-						"getResultsFiles"
-					],
-					"query": [
-						{
-							"key": "externalId",
-							"value": "KV1"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
