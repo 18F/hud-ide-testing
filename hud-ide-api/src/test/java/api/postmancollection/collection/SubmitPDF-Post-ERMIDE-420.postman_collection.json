@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "c9ecf203-b36a-49f0-a574-09f4caf6be35",
+		"name": "SubmitPDF-Post-ERMIDE-420",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api-sandb2.appsquared.io/submitPdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "submissionFileName",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "externalId",
+							"value": "HB41",
+							"type": "text"
+						},
+						{
+							"key": "acceptPartialResults",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://api-sandb2.appsquared.io/submitPdf",
+					"protocol": "http",
+					"host": [
+						"api-sandb2",
+						"appsquared",
+						"io"
+					],
+					"path": [
+						"submitPdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api-sandb2.appsquared.io/getResultsFiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"externalId\": \"HB40\",\r\n    \"generateBookmarkedPdf\": true,\r\n    \"generateCsv\": false,\r\n    \"extractFullResults\": true,\r\n    \"precenseFormNames\": [\r\n        \"HUD-92800-5B\",\r\n        \"HUD-92051\",\r\n        \"FannieMaeForm-1004D\",\r\n        \"NPMA-33\"\r\n    ],\r\n    \"extractionFormNames\": [\r\n        \"HUD-92800-5B\",\r\n        \"HUD-92051\",\r\n        \"FannieMaeForm-1004D\",\r\n        \"NPMA-33\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api-sandb2.appsquared.io/getResultsFiles",
+					"protocol": "http",
+					"host": [
+						"api-sandb2",
+						"appsquared",
+						"io"
+					],
+					"path": [
+						"getResultsFiles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
